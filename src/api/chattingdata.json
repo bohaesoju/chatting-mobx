@@ -1,0 +1,74 @@
+{
+  "friendslist": [
+    {
+      "id": 1,
+      "name": "아이유",
+      "image": "./image/img-profile-1@3x.png",
+      "message": "잘 지내니?",
+      "date": "12.18",
+      "alarm": 3
+    },
+    {
+      "id": 2,
+      "name": "지민",
+      "image": "./image/img-profile-2@3x.png",
+      "message": "어디쯤 왔어??",
+      "date": "12.20",
+      "alarm": 0
+    },
+    {
+      "id": 3,
+      "name": "정국",
+      "image": "./image/img-profile-3@3x.png",
+      "message": "광화문 사거리쯤",
+      "date": "12.20",
+      "alarm": 0
+    },
+    {
+      "id": 4,
+      "name": "뷔",
+      "image": "./image/img-profile-4@3x.png",
+      "message": "여기도 비 엄청와",
+      "date": "12.20",
+      "alarm": 0
+    },
+    {
+      "id": 5,
+      "name": "슈가",
+      "image": "./image/img-profile-5@3x.png",
+      "message": "프리미엄 몰이지",
+      "date": "12.20",
+      "alarm": 0
+    }
+  ],
+  "addFileList": [
+    {
+      "id": 1,
+      "image": "./image/img-shot-1@3x.png"
+    },
+    {
+      "id": 2,
+      "image": "./image/img-shot-2@3x.png"
+    },
+    {
+      "id": 3,
+      "image": "./image/img-shot-3@3x.png"
+    },
+    {
+      "id": 4,
+      "image": "./image/img-shot-4@3x.png"
+    },
+    {
+      "id": 5,
+      "image": "./image/img-shot-5@3x.png"
+    },
+    {
+      "id": 6,
+      "image": "./image/img-shot-6@3x.png"
+    },
+    {
+      "id": 7,
+      "image": "./image/img-shot-7@3x.png"
+    }
+  ]
+}
