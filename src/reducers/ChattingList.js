@@ -1,8 +1,8 @@
+const { produce } = require('immer');
+
 export const CHATTINGLIST_REQUEST = 'CHATTINGLIST_REQUEST';
 export const CHATTINGLIST_SUCCESS = 'CHATTINGLIST_SUCCESS';
 export const CHATTINGLIST_FAILURE = 'CHATTINGLIST_FAILURE';
-
-const { produce } = require('immer');
 
 const initialState = {
     data: [],
