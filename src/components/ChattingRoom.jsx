@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { sendToText } from '../reducers/AddfileList';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { sendToText } from '../reducers/AddfileList';
 import { Maybe } from './Maybe';
 import { ChattingList } from "./ChattingList";
 
 export const ChattingRoom = () => {
     const [chattingMessage, setChattingMessage] = useState('');
-    const { textImage } = useSelector((state) => state.AddfileList);
-    const dispatch = useDispatch();
+    // const { textImage } = useSelector((state) => state.AddfileList);
+    // const dispatch = useDispatch();
 
     const onChattingMessage = e => {
         setChattingMessage(e.target.value);
@@ -24,7 +24,7 @@ export const ChattingRoom = () => {
     };
 
     const sendToTextMessage = () => {
-        dispatch(sendToText(chattingMessage));
+        // dispatch(sendToText(chattingMessage));
         setChattingMessage('');
         window.scrollTo(0, document.body.scrollHeight);
     };
@@ -32,9 +32,9 @@ export const ChattingRoom = () => {
     return (
         <div className="ChattingRoom">
             <ul className="chattingMessageWrap">
-                <Maybe test={ textImage.length }>
+                {/*<Maybe test={ textImage.length }>*/}
                     <ChattingList />
-                </Maybe>
+                {/*</Maybe>*/}
             </ul>
             <div className="writeMessageArea">
                 <div className="InputandLabelWrap">

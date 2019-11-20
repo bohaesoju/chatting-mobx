@@ -1,16 +1,12 @@
 import * as React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { sendToImage } from '../reducers/AddfileList';
-import { useDispatch } from "react-redux";
 
-export const Header = ({ addfileListContent }) => {
+export const Header = () => {
     let location = useLocation().pathname;
     const [addFileListWrap, setAddFileListWrap] = React.useState(false);
 
-    const dispatch = useDispatch();
-
     const clickToImage = (content) => {
-        dispatch(sendToImage(content.image));
+        // dispatch(sendToImage(content.image));
         setAddFileListWrap(false);
     };
 
@@ -31,11 +27,12 @@ export const Header = ({ addfileListContent }) => {
                     {addFileListWrap === true ?
                         <div className="addFileListWrap">
                             <ul>
-                                {addfileListContent.map((content) => (
-                                    <li onClick={ () => clickToImage(content) } key={ content.id }>
-                                        <img src={require(`${ content.image }`)} alt=""/>
-                                    </li>
-                                ))}
+                                <li>헤더이미지</li>
+                                {/*{addfileListContent.map((content) => (*/}
+                                    {/*<li onClick={ () => clickToImage(content) } key={ content.id }>*/}
+                                        {/*<img src={require(`${ content.image }`)} alt=""/>*/}
+                                    {/*</li>*/}
+                                {/*))}*/}
                             </ul>
                         </div>
                         : ''}

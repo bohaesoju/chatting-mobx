@@ -20,7 +20,17 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: "/node_modules",
-                use: ['babel-loader'],
+                loader: 'babel-loader',
+                options: {
+                    presets: [
+                        ['@babel/preset-env', {
+                            targets: {browsers: ['last 2 chrome versions']},
+                            debug: true,
+                        }],
+                        '@babel/preset-react',
+                    ],
+                    plugins: ["react-hot-loader/babel", ["@babel/plugin-proposal-decorators", { legacy: true }], ["@babel/plugin-proposal-class-properties", { loose: true }]],
+                },
             },
             {
                 test: /\.html$/,
